@@ -1,0 +1,105 @@
+.blog{
+    max-width: 1200px;
+    margin: 100px auto 50px;
+}
+.blog-container h1{
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.blog-container .blog-card{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem; 
+}
+.blog-container .blog-card .card-box{
+    position: relative;
+    grid-column: span 4;
+    background-color: #191923d4;
+    padding: 20px;
+    border-top-right-radius: 70px;
+    height: 540px;
+    overflow: hidden;
+    /* z-index: -100; */
+}
+.blog-container .blog-card .card-box .bg-blue{
+    position: absolute;
+    bottom: -354px;
+    left: 0;
+    background-color: var(--primary);
+    height: 360px;
+    width: 100%;
+    /* z-index: -1; */
+    transition: all 0.01ms ease-in-out;
+}
+.blog-container .blog-card .card-box:hover .bg-blue{
+    bottom: 0;
+    transition: all 300ms ease-in-out;
+}
+.blog-container .blog-card .card-box .image{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 70px;
+}
+.blog-container .blog-card .card-box .image img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 70px;
+}
+.blog-container .blog-card .card-box .image span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    color: var(--text-color);
+    padding: 10px 40px 10px 15px;
+    border-top-right-radius: 40px;
+}
+.blog-container .blog-card .card-box .details{
+    position: absolute;
+    margin: 25px 0;
+    padding-right: 20px;
+}
+.blog-container .blog-card .card-box .details .dateBx{
+    display: flex;
+    justify-content: space-between;
+    color: #818194d4;
+    margin-bottom: 20px;
+}
+.blog-container .blog-card .card-box:hover .details .dateBx{
+    color: #cdcde0d4;
+}
+.blog-container .blog-card .card-box .details h3{
+    color: rgba(192, 189, 189, 0.787);
+    margin-bottom: 16px;
+    z-index: 1000;
+}
+.blog-container .blog-card .card-box:hover .details h3{
+    color: rgba(233, 233, 233, 0.787);
+}
+
+.blog-container .blog-card .card-box .details p{
+    color: #818194d4;
+    font-size: .9rem;
+    line-height: 24px;
+}
+.blog-container .blog-card .card-box:hover .details p{
+    color: #cdcde0d4;
+}
+
+
+
+@media(max-width: 1000px){
+    .blog-container .blog-card .card-box{
+        grid-column: span 6;
+    }
+}
+@media(max-width: 650px){
+    .blog-container .blog-card .card-box{
+        grid-column: span 12;
+    }
+}
