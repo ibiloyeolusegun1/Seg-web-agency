@@ -10,6 +10,7 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
 import ContactForm from "./components/ContactForm/ContactForm";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Blog/>
       <Contact/>
       <ContactForm/>
+      <Footer/>
     </div>
   );
 }
