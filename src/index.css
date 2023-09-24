@@ -30,7 +30,7 @@ body{
 
 .btn{
     font-weight: 500;
-    padding: .3rem 1rem;
+    padding: .8rem 1rem;
     color: white;
     background: var(--primary);
     border: none;
