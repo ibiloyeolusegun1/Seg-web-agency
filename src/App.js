@@ -9,6 +9,7 @@ import Work from "./components/Work/Work";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Testimonial/>
       <Blog/>
       <Contact/>
+      <ContactForm/>
     </div>
   );
 }
