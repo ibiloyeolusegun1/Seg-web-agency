@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./components/Header/Header";
-import { MdAnalytics } from "react-icons/md";
+// import { MdAnalytics } from "react-icons/md";
 import './index.css';
 import './App.css';
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Work from "./components/Work/Work";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero/>
       <About/>
       <Work/>
+      <Testimonial/>
     </div>
   );
 }
