@@ -20,12 +20,12 @@ const Header = () => {
           style={getMenuStyles(menuOpened)}
         >
           <a href="#" className='link'>Home</a>
-          <a href="#" className='link'>About</a>
-          <a href="#" className='link'>Services</a>
-          <a href="#" className='link'>Portfolio</a>
-          <a href="#" className='link'>Testimonials</a>
-          <a href="#" className='link'>News</a>
-          <a href="#" className='link'>Contact</a>
+          <a href="hero" className='link'>About</a>
+          <a href="about" className='link'>Services</a>
+          <a href="portfolio" className='link'>Portfolio</a>
+          <a href="testi" className='link'>Testimonials</a>
+          <a href="blog" className='link'>News</a>
+          <a href="contact" className='link'>Contact</a>
           <a href="#" className='link'>Elements</a>
           <button className='search-btn'>
             <BiSearch/>

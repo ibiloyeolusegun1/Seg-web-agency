@@ -4,7 +4,7 @@ import { BiDesktop, BiPaintRoll, BiBarChartAlt2, BiDiamond, BiDetail, BiBrush } 
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id='about'>
         <div className="about-container padding inner-w">
             <h1>What we do</h1>
             <div className="about-content">

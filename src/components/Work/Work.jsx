@@ -5,7 +5,7 @@ import "./Work.css";
 const Work = () => {
   return (
     <div>
-        <section className="work">
+        <section className="work" id='portfolio'>
             <div className="work-container padding inner-w">
                 <h1>Our works</h1>
                 <div className="work-content">

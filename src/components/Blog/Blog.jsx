@@ -3,7 +3,7 @@ import "./Blog.css"
 
 const Blog = () => {
   return (
-    <section className="blog">
+    <section className="blog" id='blog'>
         <div className="blog-container padding inner-w">
             <h1>Blog</h1>
             <div className="blog-card">

@@ -3,7 +3,7 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-   <section className="hero-wrapper">
+   <section className="hero-wrapper" id='hero'>
         <div className="hero-container">
             <div className="vert-text">
                 <a href="#">facebook</a>

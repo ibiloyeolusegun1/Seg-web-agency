@@ -4,7 +4,7 @@ import { BiPhone, BiMailSend, BiLocationPlus } from 'react-icons/bi';
 
 const ContactForm = () => {
   return (
-    <section className="contact-f">
+    <section className="contact-f" id='contact'>
         <div className="contact-f-container padding inner-w">
             <h1>Contact us</h1>
             <div className="content">
