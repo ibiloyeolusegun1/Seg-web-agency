@@ -1,7 +1,7 @@
 // import React from 'react';
 import React, {useState} from 'react';
 import "./Header.css";
-import {BiMenuAltRight, BiSearch} from 'react-icons/bi';
+import {BiMenuAltRight, BiSearch, BiX} from 'react-icons/bi';
 
 const Header = () => {
 
@@ -10,6 +10,11 @@ const Header = () => {
     if (document.documentElement.clientWidth <= 800){
       return {right: !menuOpened && "-100%"}
     }
+  }
+
+  const [model, setModel] = useState(false)
+  const toggleModel = () => {
+    setModel(!model)
   }
 
   return (
@@ -27,9 +32,23 @@ const Header = () => {
           <a href="blog" className='link'>News</a>
           <a href="contact" className='link'>Contact</a>
           <a href="#" className='link'>Elements</a>
-          <button className='search-btn'>
-            <BiSearch/>
+          <button onClick={toggleModel} className='search-btn'>
+            <BiSearch className='searchIcon'/>
           </button>
+          
+            {model && (
+              <form>
+              
+              <div className="search-box">
+                <div className="input-field">
+                  <input type="text" placeholder='Search...' />
+                  <BiX onClick={toggleModel} className='cancel-icon' size={30}/>
+                </div>
+              </div>
+            
+             </form>
+            )}
+         
         </div>
         <div className="menu-icon" onClick={()=>setMenuOpened((prev)=>!prev)}>
           <BiMenuAltRight size={35}/>
